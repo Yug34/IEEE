@@ -1,0 +1,318 @@
+@font-face {
+    font-family: Avenir;
+    src: url("D:/VGEC/IEEE WEBSITE/Avenir-Font/avenir_ff/AvenirLTStd-Black.otf") format("opentype");
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+    background-color: white;
+}
+.container{
+    padding-bottom: 1%;
+}
+.full {
+    float: left;
+    width: 100%;
+}
+
+.logo_section {
+    text-align: center;
+}
+
+.logo {
+    float: left;
+    margin-top: -10px;
+    padding-bottom: 6px;
+    margin-left: 37%;
+}
+
+.header_information {
+    background-color: #10255A;
+    padding: 0 0;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    width: 83%;
+    height: 60px;
+    margin-top: -20px;
+    right: 0;
+}
+
+.header_information::after {
+    width: 50px;
+    height: 60px;
+    background: url(Path\ 3.png);
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    background-repeat: no-repeat;
+}
+
+.header_information::before {
+    width: 75px;
+    height: 31px;
+    background: url(Path\ 2.png);
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100px;
+    background-repeat: no-repeat;
+}
+
+.menu-area {
+    float: left;
+}
+
+.menu-area-main li.active {
+    color: #FFA300;
+}
+
+nav.main-menu {
+    float: left;
+}
+
+.main-menu {
+    text-emphasis: center;
+}
+
+.main-menu ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+.main-menu ul>li {
+    display: inline-block;
+    position: relative;
+}
+
+.main-menu ul>li a {
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    color: white;
+    text-transform: uppercase;
+}
+
+.main-menu ul>li a:hover {
+    color: #FFA300;
+    text-decoration: underline;
+}
+
+.main-menu ul li:last-child a {
+    padding-right: 0;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.img-details h4 {
+    position: absolute;
+    color: white;
+    top: 17rem;
+    left: 10.2rem;
+    font-size: 20px;
+}
+
+.img-details h1 {
+    position: absolute;
+    color: white;
+    top: 18rem;
+    left: 10rem;
+    font-size: 90px;
+}
+
+.img-details h2 {
+    position: absolute;
+    color: white;
+    top: 25rem;
+    left: 10rem;
+    font-size: 83px;
+}
+
+.join-button {
+    border: 3px solid white;
+    position: absolute;
+    top: 33rem;
+    left: 10rem;
+    border-radius: 25px;
+    width: 180px;
+    text-align: center;
+    padding: 5px 2px;
+}
+
+.join-button a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.join-button a:hover {
+    background-color: transparent;
+    color: #FFA300;
+}
+
+#about {
+    background-color: #FFA300;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+
+.about-content {
+    font-size: 18px;
+}
+
+#events {
+    background-color: white;
+    font-weight: 800;
+}
+
+.row-head1 {
+    font-size: 150%;
+    color: #10255A;
+}
+
+.card-text~.row {
+    color: #10255A;
+    text-align: center;
+}
+
+.card-text,
+.card-title {
+    font-weight: bolder;
+}
+#join{
+    font-family: 'Raleway', sans-serif;
+    background-color: #10255A;
+    color: #ffffff;
+    padding: 3%;
+    font-size: medium;
+}
+#message{
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+#footer {
+    background-color: #FFA300;
+    font-family: 'Raleway', sans-serif;
+    color: #10255A;
+    padding: 36px 36px 36px 36px;
+    font-size: medium;
+    text-align: right;
+}
+
+.row-head {
+    font-weight: bold;
+    font-size: 125%;
+    text-decoration: underline;
+}
+
+.link {
+    color: #10255A;
+    font-size: 13pt;
+    width: 200px;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.name {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.rights {
+    font-size: 85%;
+    font-weight: bold;
+}
+
+#footer .container {
+    border-bottom: 3px solid #10255a;
+    padding: 1%;
+}
+
+.fa {
+    background-color: #10255A;
+    padding-top: 3%;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #FFA300;
+    font-size: 18px;
+    margin-top: 5%;
+    margin-right: 2%;
+}
+.joinhead{
+    font-weight: bolder;
+    font-size: 150%;
+}
+.index{
+    font-size: 250%;
+    font-weight: bolder;
+}
+.join-head{
+    font-size: 120%;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.why-content{
+    font-size: 95%;
+    font-weight: bold;
+}
+.padding{
+    padding: 1%;
+}
+.mes-head{
+    font-weight:bolder;
+    color: #10255A;
+    font-size:175%;
+    text-align: center;
+}
+.mes-content{
+    font-weight: bold;
+    font-size: 110%;
+}
+.auth{
+    font-style: italic;
+}
+.container hr{
+    background-color: #ffffff;
+}
+.mes-head hr{
+    background-color: #10255A;
+}
+#about hr{
+    background-color: #10255A;
+}
+#events hr{
+    background-color: #10255A;
+}
+#join hr{
+    background-color: #ffffff;
+}
