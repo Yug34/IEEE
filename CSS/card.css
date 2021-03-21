@@ -1,0 +1,40 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+#UE .main-row{
+  margin:0 5% 0 5%;
+  background-color:#ffffff;
+  box-shadow:0 0 5px 3px #b6babf; 
+}
+#UE .blog-date {
+  font-size: 15px;
+}
+#UE .blog-img{
+	width:100%;
+	height:100%;
+	/*box-shadow:0px 2px 6px 0px #7f8182;*/
+}
+#UE .blog-img img{
+	width:100%;
+	height:100%; 	
+}
+  
+#UE .blog-title{
+	padding-top:0.5%;
+}
+#UE .blog-title h3{
+	font-size:1.6em;
+  color: black;
+  font-weight: 500;
+}
+#UE .blog-desc{
+  font-style:normal;
+  font-size: 13px;
+}
+#UE .btn{
+  background-color: white;
+  color: #1D1E73;
+  border: 2px solid #e7e7e7;
+}
+
+#UE .btn:hover {background-color: #e7e7e7;}
