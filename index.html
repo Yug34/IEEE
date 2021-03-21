@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/scrollbar.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <title>Homepage</title>
+  </head>
+
+  <body>
+    <!--TODO: Add navbar here-->
+    <!--TODO: Add animation here-->
+    <div id="navbar" style="width: 100vw;">
+      <img src="img/transparentNavbarNoLogo.png" style="position: absolute; z-index: 2; margin-left: 46%">
+<!--      <img src="img/transparentNavbar.png" style="position: absolute; z-index: 2; margin-left: 33%">-->
+    </div>
+
+    <div id="videoText" style="position:absolute; z-index: 2; margin-left: 60px; margin-top: 40vh; color: white; font-size: 60px;  font-family: Arial, Helvetica, sans-serif;">
+      Welcome to IEEE
+      <p style="font-size: 20px; margin-top: 10px;border: 1px solid white; width: fit-content; padding-left: 8px; padding-right: 8px; border-radius: 20px">Take a tour</p>
+    </div>
+    <div id="videoDisplay">
+      <video id="video" autoplay loop controls="controls">
+        <source id="tHawk" src="img/t-hawk.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <section class="messageSection" style="margin-top: -25px; width: 100vw">
+      <div class="imgDiv">
+        <img src="img/Hiren%20Mehta.png" alt="Branch Counsellor" />
+      </div>
+      <div class="message">
+        <h2>Message From Branch Counsellor</h2>
+        <p>
+          It is a matter of pride to pen down a message for the students who are
+          willing to join the student branch of VGEC IEEE. IEEE is a pavement of
+          learning technical abilities and making a professional prole about
+          your accomplishments. You will get the opportunity to meet and learn
+          from the fellow students, faculty member, Brainy scholars and
+          professionals in the eld. You will get a chance to be part of
+          workshops, hands-on sessions and webinar in order to acquaint the
+          students with recent trends and development in technology. IEEE
+          encourages the environment of experimentation and novelty for a beer
+          cause. IEEE is a platform for students to express the technical
+          pursuit which develops in their originality of thought and perception.
+        </p>
+        <div class="author">
+          <p class="authorName">- Dr. Hiren Mehta</p>
+          <p>(Branch Counsellor, IEEE VGEC SB)</p>
+        </div>
+      </div>
+    </section>
+    <section class="aboutJoin">
+      <div class="about">
+        <h2>About</h2>
+        <p>
+          We are the student branch for IEEE, the world's largest organization
+          for technical professionals, at VGEC. IEEE VGEC Student Branch gives
+          students the opportunity to meet and learn from fellow students, as
+          well as faculty members and professionals in the various fields.
+        </p>
+        <button><a href="#">Learn More</a></button>
+      </div>
+      <div class="join">
+        <h2>Join IEEE</h2>
+        <p>
+          No matter what your background, if you are a student at VGEC, you are
+          eligible for active IEEE student membership or you can join as a
+          volunteer also. IEEE has ambitious students as it's members as well as faculty members passionate about spreading knowledge.
+        </p>
+        <button><a href="#">Join Now</a></button>
+      </div>
+    </section>
+    <section class="eventSection">
+      <h2>Events</h2>
+      <div class="container-fluid">
+        <div class="row">
+          <button id="prevArrow">
+            <img src="./img/leftArrow.svg" alt="Left Arrow" />
+          </button>
+          <button id="nextArrow">
+            <img src="./img/rightArrow.svg" alt="Right Arrow" />
+          </button>
+          <div class="autoplay">
+            <div class="col-sm event">
+              <img src="img/flower.jfif" alt="event" />
+              <h4>Event Name</h4>
+              <p>Event description</p>
+            </div>
+            <div class="col-sm event">
+              <img src="img/flower.jfif" alt="event" />
+              <h4>Event Name</h4>
+              <p>Event description</p>
+            </div>
+            <div class="col-sm event">
+              <img src="img/flower.jfif" alt="event" />
+              <h4>Event Name</h4>
+              <p>Event description</p>
+            </div>
+            <div class="col-sm event">
+              <img src="img/flower.jfif" alt="event" />
+              <h4>Event Name</h4>
+              <p>Event description</p>
+            </div>
+            <div class="col-sm event">
+              <img src="img/flower.jfif" alt="event" />
+              <h4>Event Name</h4>
+              <p>Event description</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer" style="width: 100vw">
+        <img src="img/IEEE-logo.png" alt="IEEE logo" />
+        <div class="socialMediaLinks">
+          <h5>Connect</h5>
+          <a
+            href="https://www.facebook.com/pg/ieeevgecsb/community/?mt_nav=0&msite_tab_async=0"
+          >
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/ieeevgecsb/?hl=en" target="_blank">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!--Slick slider CDN-->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script>
+    $(".autoplay").slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      nextArrow: document.getElementById("nextArrow"),
+      prevArrow: document.getElementById("prevArrow"),
+      responsive: [
+        {
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+  </script>
+</html>
