@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Raleway";
   }
   
   a {
@@ -13,13 +13,10 @@ body {
   
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: sans-serif;
+    font-family: "Raleway";
   }
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 #header {
-    background:#fff;
+    visibility: hidden;  
     transition: all 0.5s;
     z-index: 997;
     padding: 20px 0;
@@ -27,11 +24,12 @@ body {
   
   #header.header-scrolled {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    padding: 12px 0;
+    padding: 6px 0;
+    background: #fff;
+    visibility: visible;
   }
   
   #header .logo {
-    font-size: 38px;
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -40,10 +38,11 @@ body {
   
   #header .logo a {
     color: #1D1E73;
+    font-weight: bolder;
   }
   
   #header .logo img {
-    max-height: 50px;
+    height: 60px;
   }
   
   @media (max-width: 991px) {
@@ -78,12 +77,12 @@ body {
     color: #1D1E73;
     transition: 0.3s;
     font-size: 16px;
-    font-weight: 550;
-    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-family: "Raleway";
   }
   
   .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
   }
   
@@ -115,7 +114,7 @@ body {
   .nav-menu .drop-down ul a {
     padding: 10px 20px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: none;
     color: #1D1E73;
   }
@@ -178,13 +177,14 @@ body {
     cursor: pointer;
     text-align: right;
   }
-  
   .mobile-nav-toggle i {
-    color: #1D1E73;
+    color: #1d1e73;
   }
   
   .mobile-nav {
     position: fixed;
+    font-family: "Raleway";
+    font-weight: 600;
     top: 55px;
     right: 15px;
     bottom: 15px;
@@ -209,7 +209,7 @@ body {
     position: relative;
     color: #1D1E73;
     padding: 10px 20px;
-    font-weight: 550;
+    font-weight: 600;
     font-size: 18px;
     outline: none;
   }
@@ -226,7 +226,6 @@ body {
     position: absolute;
     right: 15px;
   }
-  
   .mobile-nav .active.drop-down > a:after {
     content: "\eaa1";
   }
@@ -275,10 +274,11 @@ body {
     background: rgb(233, 232, 232);
     padding:1.5%;
     color:#1D1E73;
- }
+  }
 .footer h4 {
-    font-family: sans-serif;
-    font-size: 1.7em;
+    font-family: "Raleway";
+    font-size: 20px;
+    font-weight: 600;
     color: #1D1E73;
     border-bottom: 1px solid #1D1E73;
     margin-bottom: 1em;
@@ -288,9 +288,10 @@ body {
    margin: auto;
 }
   .footer p {
-    font-size: 1.2em;
-    margin: 1.5em 0;
-    line-height: 2em;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px 0;
+    line-height: 30px;
   }
   .footer-middle p {
     margin: 0;
@@ -298,68 +299,256 @@ body {
   .footer a {
     color:#1D1E73;
     text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
+    font-family: "Raleway";
   }
-.footer a:hover{
+.footer a:hover, .footer .icons a:hover{
   color:#1f2041;
   text-decoration:none;
 }
-  .footer .logo{
-	  padding: 2%;     
-  }
-  .footer input[type=text] {
-  border: 1px solid white;
-  background-color:white;
-  color: #ffffff;
+.footer .icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background-color: #ababc9af;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #1D1E73;
+  text-align: center;
+  line-height: 35px;
+  padding: 1%;
+  margin-right: 3px;
+  margin-bottom: 5px;
 }
-  
-.footer .btn{
-  color:#ffffff;
-  background: white;
-  border-radius:0px 5px 5px 0px;
-  margin-bottom: 1em;
-}
-.footer .btn:hover{
-	background-color:rgb(7, 97, 92);
-	color:rgb(7, 97, 92);
-	border:1px solid rgb(7, 97, 92);
-}
+ .footer .icons i{
+   font-size: 30px;
+ }
   .footer-right  {
-   font-family: 'Open Sans', sans-serif;
-  display:block;
-  }
-  .footer b{	  
-	  font-size:1em;
+   font-family: "Raleway";
+   display:block;
   }
  .footer .contact{
 	 text-align:left;
 	 padding-left:21%;
+   font-size: 16px;
+   font-weight: 600;
  }
  .footer #address{
    text-align: left;
  }
-
 .footer .follow{
-	margin:auto; 
-	padding-left:10% !important;
+	padding-left:20% !important;
 	text-align:left;
-	}
+}
+.footer .contact{
+  padding-left: 10%;
+}
+@media (max-width: 767px) {
+  .footer h2:first-child{
+    margin-top: 10%;
+  }
+  .footer .icons{
+    margin-bottom: 15%;
+  }
+  .footer h4, .footer .mid-btm , .footer .contact p{
+    text-align: left;
+  }
+  .footer .mid-btm{
+    margin-bottom: 10%;
+  }
+  .footer .contact{
+    padding-left: 0%;
+    margin-bottom: 5%;
+  }
+}
 .copyright {
     background:black;
-    padding: 1em 0;
+    padding: 10px 0;
     text-align: center;
  }
 .copyright p {
-    font-size: 1em;
+    font-size: 14px;
     color: #fff;
  }
  
- .banner{
-    background: url("Final/banner.jpg") no-repeat;
+ /*=============== Banner =======================*/
+ #banner{
+    width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
+    background: linear-gradient(rgba(103, 110, 209, 0.1), rgba(103, 128, 209, 0.1)), url("../image/I2.jpg") fixed center center;
     background-size: cover;
-    padding-top: 5%;   
+    position: relative;
+    font-family: "Raleway"; 
   }
   
+
+  #banner .banner-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#banner .up1 {
+  margin: 30px 0 10px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#banner .up2 {
+  color: #fff;
+  margin-bottom: 0px;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+
+#banner .btn-get-started {
+  font-size: 36px;
+  display: inline-block;
+  padding: 4px 0;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+  margin: 10px;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#banner .btn-get-started:hover {
+  padding-top: 8px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: 1024px) {
+  #banner {
+      background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #banner .up1 {
+      font-size: 30px;
+      line-height: 36px;
+  }
+  #banner .up2 {
+      font-size: 38px;
+      line-height: 24px;
+      margin-bottom: 30px;
+  }
+}
+
+/*================= Message =======================*/
+.messageSection {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 7%;
+  margin: 40px 0%;
+  font-family: "Raleway";
+}
+
+.messageSection img {
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  box-shadow:0 0 5px 3px #b6babf;
+  margin-right: 50px;
+}
+
+.messageSection h5 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #1D1E73;
+  margin: 20px 0;
+}
+
+.message p,
+.author p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.author {
+  float: right;
+  margin-top: 22px;
+}
+
+.author .authorName {
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .messageSection {
+    flex-direction: column;
+  }
+
+  .messageSection img {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .author {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 575px) and (max-width: 768px) {
+  .messageSection {
+    flex-direction: column;
+    padding: 30px 50px;
+  }
+
+  .messageSection img {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  .author {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .messageSection {
+    flex-direction: column;
+    padding: 30px 25px;
+    
+  }
+
+  .messageSection img {
+    height: 180px;
+    width: 180px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+  }
+
+  .messageSection h5 {
+    text-align: center;
+  }
+
+  .message p,
+  .author p {
+    padding: 0px 10px;
+  }
+
+  .author {
+    margin-top: 10px;
+  }
+}
+
+
+

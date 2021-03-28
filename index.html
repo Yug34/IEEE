@@ -26,6 +26,35 @@
 	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 	<link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
 	<link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+	<style>
+		/* width */
+		::-webkit-scrollbar {
+			width: 5px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: rgba(0, 0, 0, 0.1);
+			border-radius: 2px;
+		}
+
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: #555555;
+			border-radius: 2px;
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background: #888888;
+		}
+
+		body {
+			overflow-y: overlay;
+			overflow-x: hidden;
+		}
+	/*	TODO: The overflow: overlay property might have issues on firefox, have a look later*/
+	</style>
 </head>
 <body>
 <!-- ======= Header ======= -->
@@ -38,43 +67,50 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="index.html">Home</a></li>
-            <li class="drop-down"><a href="">About</a>
+          <li><a href="index.html">HOME</a></li>
+            <li class="drop-down"><a href="">ABOUT</a>
             	<ul>
-              		<li><a href="#">What is IEEE?</a></li>
-              		<li><a href="#">About VGEC SB</a></li>
+              		<li><a href="#">WHAT IS IEEE?</a></li>
+              		<li><a href="#">ABOUT VGEC SB</a></li>
 				</ul>
           </li>
-          <li><a href="#about">Events At Glance</a></li>
-          <li><a href="#services">Membership</a></li>
-          <li><a href="#portfolio">IEEE Members</a></li>
-          <li><a href="#portfolio">Contact Us</a></li>
+          <li><a href="#">EVENTS AT GLANCE</a></li>
+          <li><a href="#">MEMBERSHIP</a></li>
+          <li><a href="#">IEEE MEMBERS</a></li>
+          <li><a href="#">CONTACT US</a></li>
          </ul>
       </nav><!-- .nav-menu -->
      </div>
 </header><!-- End Header -->
 
-  <div class="py-5 bg-image-full" style="background-image: url('image/banner.jpg');">
-    <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-    <div style="height: 600px;"></div>
-  </div>
 
-  
-</div>
+<!--Main Poster-->
+ <section id="banner">
+	 <div class="banner-container animated fadeIn delay-1s" data-aos="fade-up">
+		 <div class="up1">VGEC IEEE</div>
+		 <div class="up2">Student Branch</div>
+		 <br/>
+		 <br/>
+		 <a href="#UpEvents" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
+	 </div>
+ </section>
+  <br/>
+  <br/>
+<div id="UpEvents"></div>
   <!--Upcoming Event-->
   <div data-aos="zoom-in"  data-aos-duration="800" class="container" id="UE">
-	<h5 style=" padding-top: 5%; padding-bottom: 1%; color:#1D1E73;font-weight: 700; text-align: center; font-size: 2.7em;">Upcoming Events</h5>
-	<div class="row main-row p-2">
-		<div class="col-lg-4 col-md-12 col-sm-12">
-			<div class="blog-img mb-4" class="img-fluid">
-				<img src="image/Mastering C.jpg">
+	<h5 style=" padding-top: 5%; padding-bottom: 2.8%; color:#1D1E73;font-weight: 700; text-align: center; font-size: 25px;">Upcoming Events</h5>
+	<div  class="row main-row p-2">
+		<div class="col-lg-6 col-md-12 col-sm-12">
+			<div style="padding-left:1%;" class="blog-img mb-4" class="img-fluid">
+				<img  src="image/Mastering C.jpg">
 			</div>
 		</div>
 		<div class="col-lg-6 col-md-12 col-sm-12">
 			<div class="blog-title mb-3">
-				<h3>Workshop on: Mastering C</h3>
+				<h3 style="text-align:left">Workshop on: Mastering C</h3>
 			</div>
-			<div class="blog-date mb-2">
+			<div class="blog-desc mb-2" >
 				<span style="color: #1D1E73;"><strong>Date</strong> :</span>
 				<span> 20-21 Feb, 2021</span>
 				<br />
@@ -88,11 +124,11 @@
 				<span> 50/- (For IEEE Members) & 100/- (For Non-IEEE Members)</span>
 			</div>
 			<div class="blog-desc mb-2">
-				<p>IEEE VGEC Student Branch is bringing an amazing 🤩 opportunity for you all by conducting an
+				<p style="text-align: left;"> IEEE VGEC Student Branch is bringing an amazing 🤩 opportunity for you all by conducting an
 					online coding 👩🏼‍💻🧑🏻‍💻workshop of C programming language. </p>
 			</div>
 			<div class="blog-read-more mb-2">
-				<button class="btn">Registration link
+				<button class="btn">Register Now!!
 				</button>
 			</div>
 		</div>
@@ -104,46 +140,41 @@
   <!--Upcoming Event--> 
 
   <!--About us-->
-  <div class="container" data-aos="zoom-in"  data-aos-duration="1500">
-    <div class="row main-row p-2">
-      <div class="col-lg-5 col-md-12 col-sm-12">
-        <div class="blog-img mb-4" class="img-fluid">
-          <img src="image/AboutUs.jpg">
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-12 col-sm-12">
-        <div class="blog-title mb-3">
-          <h3>Welcome to VGEC IEEE Student Branch</h3>
-        </div>
-        <div class="blog-desc mb-2">
-          <p>We are the student branch for IEEE, the world's largest organization for
-            technical professionals, at VGEC. IEEE
-            VGEC Student Branch gives students the opportunity to meet and learn from fellow students, as well as
-            faculty
-            members and professionals in the various fields.<br />
-            <br/>
-            <a href="#">Learn more <i class="fa fa-chevron-circle-right"></i></a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--About us end -->
+  <div class="container" data-aos="zoom-in"  data-aos-duration="1500" id="AJ">
+	<div class="row main-row p-2">
+	  <div class="col-lg-12 col-md-12 col-sm-12">
+		<div class="blog-title mb-2">
+		  <h3 style="text-align: left;font-weight: 700;">Welcome to VGEC IEEE Student Branch</h3>
+		</div>
+		<div class="blog-desc mb-2">
+		  <p style="text-align: left;font-weight: 600;"><br />We are the student branch for IEEE, the world's largest organization for
+			technical professionals, at VGEC. IEEE
+			VGEC Student Branch gives students the opportunity to meet and learn from fellow students, as well as
+			faculty
+			members and professionals in the various fields.<br />
+			<br/>
+			<a href="#" style="text-align: right;font-weight: 600;">Learn More <i class="fa fa-chevron-circle-right"></i></a>
+		  </p>
+		</div>
+	  </div>
+	</div>
+	</div>
+	<br/>
+	<!--About us end -->
 
   <!-- Events -->
-  <h5 data-aos="zoom-in" data-aos-duration="1500" style=" padding-top: 5%; padding-bottom: 1%; color:#1D1E73;font-weight: 700; text-align: center; font-size: 2.7em;">Events</h5> 
-  <div class="container">
+  <h5 data-aos="zoom-in" data-aos-duration="1500" style=" padding-top: 5%; padding-bottom: 1%; color:#1D1E73;font-weight: 700; text-align: center; font-size: 25px;">Recent Events</h5> 
+  <div data-aos="zoom-in" data-aos-duration="1500" class="container">
 	<br />
-	<!--1st Row-->
 	<div class="row">
 		<div class="card">
 			<div class="card-img">
 				<img class="card-img-top" src="image/Ethical.jpg" alt="...">
 			</div>
 			<div class="card-body">
-				<h4 class="card-title">
+				<h5 class="card-title">
 					Ethical Hacking And Information Security
-				</h4>
+				</h5>
 				<p class="card-text" style="max-height: 15rem;">
 					Hack Yourself Before Someone Else Does!<br />
 					Conducted by <strong>Mr. Darshil Modi</strong><br />
@@ -158,9 +189,9 @@
 				<img class="card-img-top" src="image/Nuevo.jpg" alt="...">
 			</div>
 			<div class="card-body">
-				<h4 class="card-title">
+				<h5 class="card-title">
 					NUEVO IEEE
-				</h4>
+				</h5>
 				<p class="card-text" style="max-height: 15rem;">
 					Interactive session by <br /><strong>Ex- Chair Shivam Soni</strong> and <strong>Ex-Vice Chair
 						Rishi James Macwan</strong><br />
@@ -170,57 +201,20 @@
 				</p>
 			</div>
 		</div>
-	</div>
-	
-	<!--2nd Row-->
-	<div class="row">
-		<div class="card">
-			<div class="card-img">
-				<img class="card-img-top" src="image/Robotics.jpg" alt="..." style="height: 350px;">
-			</div>
-			<div class="card-body">
-				<h4 class="card-title">
-					GETTING STARTED WITH ROBOTICS
-				</h4>
-				<p class="card-text" style="max-height: 15rem;">
-					A hands-on workshop<br />
-					Addressed by <strong>Mr. Priyank Shah</strong><br />
-					<strong>Date</strong>: 24th March 2017 <br />
-					<strong>Time</strong> : 5 PM <br />
-					<strong>Venue</strong> : Viswesvaraya Auditorium, VGEC<br />
-				</p>
-			</div>
-		</div>
 		<div class="card">
 			<div class="card-img">
 				<img class="card-img-top" src="image/Codemania.jpg" alt="...">
 			</div>
 			<div class="card-body">
-				<h4 class="card-title">
+				<h5 class="card-title">
 					CODEMANIA
-				</h4>
+				</h5>
 				<p class="card-text" style="max-height: 15rem;">
 					Competition<br />
 					On <strong>Hacker Rank Portal</strong><br />
 					<strong>Date</strong>: 23rd January 2017 <br />
 					<strong>Time</strong> : 5 PM <br />
-				</p>
-			</div>
-		</div>
-		<div class="card">
-			<div class="card-img">
-				<img class="card-img-top" src="image/IOT.jfif" alt="...">
-			</div>
-			<div class="card-body">
-				<h4 class="card-title">
-					EXPERT TALK ON RASPBERRY PI AND IOT
-				</h4>
-				<p class="card-text" style="max-height: 15rem;">
-					The economic impact and benefits of IoT will be huge.<br />
-					Conducted by <strong>Mr. Tushar Champaneria</strong><br />
-					<strong>Date</strong>: 2nd July 2016 <br />
-					<strong>Time</strong> : 10.30 AM To 3.00 PM <br />
-					<strong>Venue</strong> : Visvesvaraya Auditorium, VGEC<br />
+					<strong>Venue</strong> : B - block lab, VGEC<br />
 				</p>
 			</div>
 		</div>
@@ -229,103 +223,111 @@
   <!-- Events end-->  
     
   <!--Join IEEE-->
-	<div class="container" data-aos="zoom-in"  data-aos-duration="1500" id="AJ">
-		<div class="row main-row p-2">
-		  <div class="col-lg-12 col-md-12 col-sm-12">
-			<div class="blog-title mb-3">
-			  <h3>Join IEEE</h3>
+		<div class="container" data-aos="zoom-in"  data-aos-duration="1500" id="AJ">
+			<div class="row main-row p-2">
+			  <div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="blog-title mb-2">
+				  <h3 style="text-align: left;font-weight: 700;">Join IEEE</h3>
+				</div>
+				<div class="blog-desc mb-2">
+				  <h2 style="text-align:left ; font-size: 18px; color: black; font-weight: 600;">The world's largest technical professional organization for the advancement
+					of technology</h2>
+				</div>
+				<div class="blog-desc mb-2">
+				  <p style="text-align: left;font-weight: 600;"><br />No matter what your background, if you are a student at VGEC, you are
+					eligible for active IEEE student membership
+					or you can join as a volunteer also.<br />
+					<br/>
+					<a href="#" style="text-align: right;font-weight: 600;">Join Now <i class="fa fa-chevron-circle-right"></i></a>
+				  </p>
+				</div>
+			  </div>
 			</div>
-			<div class="blog-title mb-3">
-			  <h2 style="text-align: center; font-size: 20px; color: black;">The world's largest technical professional organization for the advancement
-				of technology</h2>
-			</div>
-			<div class="blog-desc mb-2">
-			  <p style="text-align: center;"><br />No matter what your background, if you are a student at VGEC, you are
-				eligible for active IEEE student membership
-				or you can join as a volunteer also.<br />
-				<br/>
-				<a href="#" style="text-align: right;">Join Now <i class="fa fa-chevron-circle-right"></i></a>
-			  </p>
-			</div>
-		  </div>
-		</div>
-		</div>
+			</div>	
+		<br/>
 		<br/>
 		<br/>
 
   <!--Message -->
-  <div class="container">
-	<h5  style="font-size: 2.7em; color:#1D1E73;font-weight: 700;text-align: center;" data-aos="flip-left"
-	data-aos-easing="ease-out-cubic"
-	data-aos-duration="2000" class="text1">A Message From Branch Counselor</h5>
-  </br>
-	<span data-aos="zoom-in-right" data-aos-duration="1500"id="text2" data-aos-duration="3000">"It is a matter of pride to pen down a message for the students
-		  who are willing to join the student branch of VGEC IEEE. IEEE is a pavement of learning technical
-		  abilities and making a professional profile about your accomplishments. You will get the opportunity
-		  to meet and learn from the fellow students, faculty member, Brainy scholars and professionals in the
-		  field. You will get a chance to be part of workshops, hands-on sessions and webinar in order to
-		  acquaint the students with recent trends and development in technology. IEEE encourages the
-		  environment of experimentation and novelty for a batter cause. IEEE is a platform for students to
-		  express the technical pursuit which develops in their originality of thought and perception."
-		  <br />
-		  <br />
-		  <strong data-aos="zoom-in-right" data-aos-duration="1500"> - Prof. Hiren Mehta</strong>
-	</span>
-</div>
-</br>
-</br>
-</script> 
+	<section class="messageSection" style="margin-top: -25px;">
+		<div class="imgDiv">
+		  	<img src="image/Hiren Mehta.png" alt="Branch Counsellor" />
+		</div>
+		<div class="message">
+	  	<h5 data-aos="zoom-in"
+	data-aos-duration="2000" class="text1">Message From Branch Counselor</h5>
+	
+	  	<p>
+		It is a matter of pride to pen down a message for the students who are
+		willing to join the student branch of VGEC IEEE. IEEE is a pavement of
+		learning technical abilities and making a professional prole about
+		your accomplishments. You will get the opportunity to meet and learn
+		from the fellow students, faculty member, Brainy scholars and
+		professionals in the eld. You will get a chance to be part of
+		workshops, hands-on sessions and webinar in order to acquaint the
+		students with recent trends and development in technology. IEEE
+		encourages the environment of experimentation and novelty for a beer
+		cause. IEEE is a platform for students to express the technical
+		pursuit which develops in their originality of thought and perception.
+	  	</p>
+	  	<div class="author">
+			<p class="authorName">- Dr. Hiren Mehta</p>
+			<p>(Branch Counselor, IEEE VGEC SB)</p>
+	  	</div>
+		</div>
+  </section>
+
+</br> 
   <!--Message end-->
 
   <!--Footer-->
   <div class="footer" id="sitemap">
 	<div class="container row justify-content-center text-center">
-	  <div class="col-md-4 footer-left">
-		<h4 class="text-center">Site Map</h4>
-		<div class="mid-btm">
-		  <p>
-			<a href="https://www.vgecg.ac.in/" target="_blank">About VGEC</a>
-			<br /><a href="https://www.ieee.org" target="_blank">About IEEE</a>
-	   
-			<br /><a href="http://ieee.vgecg.ac.in/" target="_blank">IEEE VGEC SB</a>
-			<br />
-			<a href="https://ieeegujaratsection.org" target="_blank"
-			  >IEEE Gujarat Section</a>
-			<br /><a href="#" target="_blank">Join us</a>
-		  
-		  </p>
+	  <div class="col-md-4 footer-left" style="text-align: left; font-weight: 800;">
+		<h2>VGEC IEEE</h2>
+		<h2>Student Branch</h2>
+		<br/>
+		<div class="icons">
+			<a href="https://www.facebook.com/ieeevgecsb" target="_blank">
+				<i class="fa fa-facebook"></i></a> &nbsp;
+			<a href="https://www.instagram.com/ieeevgecsb/" target="_blank">
+				<i class="fa fa-instagram"></i></a> &nbsp;
+			<a href="https://twitter.com/SbVgec?s=09" target="_blank"> 
+				<i class="fa fa-twitter"></i></a> &nbsp;
+			<a href="https://www.instagram.com/ieeevgecsb/" target="_blank">
+				<i class="fa fa-linkedin-square"></i></a>
 		</div>
 	  </div>
 	  <div class="col-md-4 footer-left">
-		<h4>VGEC</h4>
-		<div class="logo" style="margin-bottom: 75px;">
-			<a href="http://www.vgecg.ac.in" target="_blank">
-		  		<img
-				src="https://www.vgecg.ac.in/clogo.png"
-				class="college-logo"
-				width="40%"
-				height="40%"/>
-			</a>
+		<h4>Site Map</h4>
+		<div class="mid-btm">
+		  <p>
+			<a href="#" target="_blank">About IEEE</a>
+			<br /><a href="#" target="_blank">IEEE VGEC SB</a>
+			<br /><a href="#" target="_blank">IEEE Gujarat Section</a>
+			<br /><a href="#" target="_blank">Join US</a>  
+		  </p>
 		</div>
 	  </div>
 	  <div class="col-md-4 footer-right">
 		<h4>Contact Info</h4>
-	  		<p><div class="contact" style="margin-bottom: 50px; padding-left: 30px;">
-					<i class="fa fa-map-marker"></i>
-					<b>Address:</b> Nr. Visat three roads,<br>Sabarmati-Koba highway,
-	   				<br>Chandkheda, Ahmedabad-382424<br>
-					<i class="fa fa-envelope"></i>
-					<b style="line-height:3em;">Email: </b>ieeevgecsb@gmail.com<br><br>
-					<div class="follow"><b>Follow us on: </b><a href="https://www.instagram.com/ieeevgecsb/" target="_blank"><i class="fa fa-instagram" style="font-size:1.7em;"></i></a>&nbsp;<a href="https://twitter.com/SbVgec?s=09" target="_blank"> <i class="fa fa-twitter" style="font-size:1.7em;"></i></a> &nbsp;<!--a href="https://www.facebook.com/ieeevgecsb" target="_blank"><i class="fa fa-facebook" style="font-size:1.7em;"></i></a--></div></p>
-	  			</div>
+	  		<div class="contact">
+				<p>
+					<p style="line-height :1.5em;">
+					<i class="fa fa-map-marker" style="font-size: 20px;"></i>&nbsp;
+					<b style="font-size: 17px;">Address:</b> Nr. Visat three roads,<br>Sabarmati-Koba highway,
+	   				<br>Chandkheda, Ahmedabad-382424<br></p>
+					<i class="fa fa-envelope" style="font-size: 20px;"></i>
+					<b style="line-height:2em;font-size: 17px;">Email: </b><a href="ieeevgecsb@gmail.com">ieeevgecsb@gmail.com</a><br><br>		
+				</p>
+	  		</div>
 	  </div>
 	</div>
   </div>
   <div class="copyright">
 	<div class="container">
 	  <p>
-		© 2021 IEEE VGEC SB | Design by
-		Web Master team
+		© 2021 IEEE VGEC Student Branch
 	  </p>
 	</div>
   </div>

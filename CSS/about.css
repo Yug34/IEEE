@@ -1,8 +1,8 @@
 
 .main-row{
-    margin:5%;
     background-color:#ffffff;
-    box-shadow:0 0 0px 1px #b6babf; 
+    box-shadow:0 0 0px 1px #b6babf;
+    font-family: "Raleway"; 
   }
   .blog-img{
       width:100%;
@@ -18,17 +18,18 @@
   .blog-title h3{
     margin-top: 30px;
     margin-left: 33px;
-    text-align: center;
-    font-size:1.8em;
-    font-weight: 550;
+    text-align: left;
+    font-size:25px;
+    font-weight: 700;
     color: #1D1E73;
   }
   .blog-desc{
     margin-top: 30px;
     margin-left: 30px;
-    text-align: center;  
+    text-align: left;  
     font-style:normal;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 600;
   }
   @media screen and (max-width:991px){
      .blog-title h3{
@@ -38,3 +39,34 @@
     margin-left: 0px;
 }
   }
+
+   
+@media screen and (max-width: 620px){
+  .main-row {
+      width:30%;
+    }
+  }
+    @media screen and (max-width: 1000px) {
+      .main-row {
+        width: 30%;
+      }
+    }
+    
+    @media screen and (max-width: 620px) {
+      .container {
+        width: 100%;
+      }
+    
+      .heading {
+        padding: 20px;
+        font-size: 20px;
+      }
+    
+      .row.main-row {
+        width: 86%;
+        margin-left: 7%;
+        margin-right: 7%;
+         
+      }
+    }
+    

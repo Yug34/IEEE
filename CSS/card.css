@@ -1,40 +1,75 @@
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Raleway";
 }
 #UE .main-row{
-  margin:0 5% 0 5%;
   background-color:#ffffff;
   box-shadow:0 0 5px 3px #b6babf; 
 }
 #UE .blog-date {
-  font-size: 15px;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: inherit;
+  padding-left: 2.4em;
 }
 #UE .blog-img{
 	width:100%;
 	height:100%;
-	/*box-shadow:0px 2px 6px 0px #7f8182;*/
 }
 #UE .blog-img img{
-	width:100%;
-	height:100%; 	
+	height:100%;
+  width: 100%;  	
 }
   
 #UE .blog-title{
 	padding-top:0.5%;
+  text-align: left;
 }
 #UE .blog-title h3{
-	font-size:1.6em;
+	font-size:22px;
   color: black;
-  font-weight: 500;
+  font-weight: 600;
+  text-align: left;
 }
 #UE .blog-desc{
   font-style:normal;
-  font-size: 13px;
+  font-size: 16px;
+  font-weight: 600;
+}
+#UE .blog-read-more
+{
+  text-align: left;
+  padding-left: 6%;
 }
 #UE .btn{
-  background-color: white;
-  color: #1D1E73;
+  background-color: #1d1e73;
+  color: #fff;
   border: 2px solid #e7e7e7;
+  align-items: center;
 }
 
-#UE .btn:hover {background-color: #e7e7e7;}
+#UE .btn:hover {background-color: #1d1e73dc;}
+
+
+@media screen and (max-width: 1000px) {
+  #UE .main-row {
+    width: 30%;
+  }  
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  #UE .row.main-row.p-2 {
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+     
+  }
+}
