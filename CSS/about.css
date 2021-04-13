@@ -1,83 +1,83 @@
-#about{
-  font-family: 'Raleway';
+* {
+  font-family: "Raleway", sans-serif;
 }
 
-   
-@media screen and (max-width: 620px){
-  #about{
+#about {
+  font-family: "Raleway", sans-serif;
+}
+
+@media screen and (max-width: 620px) {
+  #about {
     margin-left: 7%;
     margin-right: 7%;
-    }
   }
- 
-.main-row{
-    background-color:#ffffff;
-    box-shadow:0 0 0px 1px #b6babf;
-    font-family: "Raleway"; 
-  }
-  .blog-img{
-      width:100%;
-      height:100%;
-  }
-  .blog-img img{
-      width:100%;
-      height:100%;    
-  }
-  .blog-title{
-      padding-top:0.5%;
-  }
-  .blog-title h3{
-    margin-top: 30px;
-    margin-left: 33px;
-    text-align: left;
-    font-size:25px;
-    font-weight: 700;
-    color: #1D1E73;
-  }
-  .blog-desc{
-    margin-top: 30px;
-    margin-left: 30px;
-    text-align: left;  
-    font-style:normal;
-    font-size: 16px;
-    font-weight: 600;
-  }
-  @media screen and (max-width:991px){
-     .blog-title h3{
-    margin-left: 0px;
 }
- .blog-desc{
-    margin-left: 0px;
+
+.main-row {
+  background-color: #ffffff;
+  box-shadow: 0 0 0px 1px #b6babf;
+  /* font-family: "Raleway"; */
 }
+.blog-img {
+  width: 100%;
+  height: 100%;
+}
+.blog-img img {
+  width: 100%;
+  height: 100%;
+}
+.blog-title {
+  padding-top: 0.5%;
+}
+.blog-title h3 {
+  margin-top: 30px;
+  margin-left: 33px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 700;
+  color: #1d1e73;
+}
+.blog-desc {
+  margin-top: 30px;
+  margin-left: 30px;
+  text-align: left;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media screen and (max-width: 991px) {
+  .blog-title h3 {
+    margin-left: 0px;
+  }
+  .blog-desc {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .main-row {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main-row {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
   }
 
-   
-@media screen and (max-width: 620px){
-  .main-row {
-      width:100%;
-    }
+  .heading {
+    padding: 20px;
+    font-size: 20px;
   }
-    @media screen and (max-width: 1000px) {
-      .main-row {
-        width: 100%;
-      }
-    }
-    
-    @media screen and (max-width: 620px) {
-      .container {
-        width: 100%;
-      }
-    
-      .heading {
-        padding: 20px;
-        font-size: 20px;
-      }
-    
-      .row.main-row {
-        width: 86%;
-        margin-left: 7%;
-        margin-right: 7%;
-         
-      }
-    }
-    
+
+  .row.main-row {
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
